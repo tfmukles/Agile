@@ -1,13 +1,9 @@
 // section style
 .section {
-  @apply py-24 xl:py-28;
+  @apply lg:py-[66px] py-8;
   &-sm {
     @apply py-16 xl:py-20;
   }
-}
-
-.section-padding{
-  @apply lg:py-[66px] py-8
 }
 
 .container-fluid {
@@ -24,6 +20,19 @@
 // container
 .container {
   @apply mx-auto max-w-[1320px] px-4;
+}
+
+// banner
+.wave{
+  @apply after:bg-no-repeat after:bg-[url('/images/banner/wave.png')] after:absolute after:top-[50px] after:md:top-16 lg:after:top-16 after:left-0 after:w-40 after:bg-cover after:h-4;
+}
+
+.spring{
+  @apply after:absolute after:bg-no-repeat after:opacity-30 after:right-1 after:lg:right-0 after:-top-4 after:bg-[url('/images/banner/spring.png')] after:w-14 after:h-14;
+}
+
+.star{
+  @apply before:absolute before:-top-9 before:left-1 before:lg:-top-16 before:lg:left-11 2xl:before:-left-[12%] before:bg-[url('/images/star.png')] before:w-10 before:h-10 before:bg-no-repeat before:bg-contain;
 }
 
 .swiper-pagination-bullet {
@@ -203,5 +212,29 @@
 
   .list-item {
     @apply pl-6 text-lg relative text-dark before:absolute before:w-2 before:h-2 before:rounded-full before:bg-primary before:left-0 before:top-1/2 before:-translate-y-1/2;
+  }
+}
+
+.logo-animation, .swiper-wrapper{
+  transition-timing-function: linear;
+}
+
+//button-button
+.video-button {
+  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary rounded-full;
+  animation: videoButton 5s ease-in-out infinite;
+}
+
+@keyframes videoButton {
+  0%{
+    @apply shadow-[0_0_0_0] shadow-primary/20;
+  }
+  
+  75%{
+    @apply shadow-[0_0_0_50px] shadow-primary/0;
+  }
+
+  100%{
+    @apply shadow-[0_0_0_100px] shadow-primary
   }
 }

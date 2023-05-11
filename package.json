@@ -1,8 +1,8 @@
 {
-  "name": "gulpplate",
+  "name": "agile",
   "version": "1.1.0",
-  "description": "Gulp and Tailwindcss boilerplate for creating HTML templates",
-  "author": "Zeon Studio",
+  "description": "Gulp and Tailwindcss Sass Theme",
+  "author": "themefrisher",
   "license": "MIT",
   "scripts": {
     "dev": "gulp dev",

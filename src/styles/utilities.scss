@@ -15,6 +15,24 @@
   @apply rounded-[16px];
 }
 
-.shadow {
-  box-shadow: 0px 4px 18px rgba(145, 96, 253, 0.15);;
+.shadow{
+  @apply shadow-[0_4px_18px] shadow-primary/20;
+}
+
+.video-button{
+  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary rounded-full;
+
+  span{
+
+  }
+}
+
+.track {
+  @apply absolute flex-row will-change-transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }

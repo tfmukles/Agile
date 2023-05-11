@@ -82,25 +82,6 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
-      boxShadow: {
-        'brand-shadow': "0px 4px 18px rgba(145, 96, 253, 0.15)"
-      },
-      keyframes: {
-        videoPulse: {
-          "0%": {
-            'box-shadow': '0 0 0 0px rgba(0, 0, 0, 0.2)'
-          },
-          "70%": {
-           "box-shadow": "0 0 0 50px rgba(168, 63, 57, 0)"
-          },
-          "100%": {
-            "box-shadow": "0 0 0 100px rgba(168, 63, 57, 0)"
-          }
-        }
-      },
-      animation: {
-        videoPulse: 'videoPulse 2s ease-in-out infinite',
-      }
     },
   },
   plugins: [

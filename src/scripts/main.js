@@ -48,7 +48,7 @@
   // ####################### Brand Slider #########################
   new Swiper(".brand-slider", {
     spaceBetween: 24,
-    loop: false,
+    loop: true,
    
     breakpoints: {
       0: {
@@ -66,7 +66,33 @@
     },
   })
 
-  // ####################### testimonial Slider #########################
+  // ########################## Logo Animation ##############################
+  new Swiper(".logo-animation", {
+    slidesPerView: 10,
+    spaceBetween: 10,
+    allowTouchMove: false,
+    loop: true,
+    speed: 4000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+  });
+
+  new Swiper(".logo-animation-rtl", {
+    slidesPerView: 10,
+    direction: 'horizontal',
+    spaceBetween: 10,
+    allowTouchMove: false,
+    loop: true,
+    speed: 4000,
+    autoplay: {
+      delay: 1,
+      reverseDirection: true,
+      disableOnInteraction: false,
+    },
+  });
+
   new Swiper(".testimonial-slider", {
     spaceBetween: 24,
     loop: true,
@@ -137,7 +163,7 @@
   const closeModalButtons = document.querySelectorAll("[data-modal-close]");
 
   function openModal(modal) {
-    if (modal === null) {
+    if (modeal === null) {
       return null;
     }
     const overlay = modal.querySelector("[data-modal-overlay]");
