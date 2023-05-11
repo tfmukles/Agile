@@ -1,0 +1,19 @@
+.btn {
+  @apply inline-block text-primary text-lg rounded-md border border-transparent px-5 py-[10px] font-semibold capitalize transition;
+}
+
+.btn-sm {
+  @apply rounded-sm px-4 py-1.5 text-sm;
+}
+
+.btn-lg {
+  @apply px-[3.08rem] text-lg py-[15px] bg-red-600 rounded-md;
+}
+
+.btn-primary {
+  @apply border-primary bg-gradient-to-r from-[#9D62F5] to-[#6049CD] text-white leading-[28px];
+}
+
+.btn-outline-primary {
+  @apply border border-primary bg-transparent text-dark hover:bg-primary hover:text-white;
+}
