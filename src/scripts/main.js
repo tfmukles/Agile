@@ -33,6 +33,17 @@
     });
   });
 
+  // ####################### Header #########################
+  const header = document.querySelector(".header");
+  window.addEventListener("scroll", function(event){
+    const scrollY = this.window.pageYOffset;
+    if(scrollY >= 30){
+      header.classList.add("shadow");
+      return;
+    }
+    header.classList.remove("shadow");
+  })
+
 
   // ####################### Brand Slider #########################
   new Swiper(".brand-slider", {
