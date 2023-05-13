@@ -1,6 +1,6 @@
 # Gulpplate
 
-Gulpplate is a free starter template built with Gulp and TailwindCSS, providing everything you need to jumpstart your Gulp project and save valuable time.
+Agile is a free starter template built with Gulp and TailwindCSS, providing everything you need to jumpstart your Gulp project and save valuable time.
 
 ## Dependency
 

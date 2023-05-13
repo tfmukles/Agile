@@ -6,7 +6,7 @@
         class="lg:col-7 xl:col-6 relative star spring">
         <h1
           class="mb-4 capitalize relative">
-          We simplify business easy success!
+         <span class="wave">We simplify</span> business easy success!
         </h1>
         <p class="mb-6 pr-3 text-xl leading-7 text-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing
@@ -53,7 +53,19 @@
             data-modal-open
             class="video-button ">
             <i class="fa-solid fa-play"></i>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
+          <!-- video modal -->
+          <div class="modal" data-modal>
+            <div class="modal-overlay" data-modal-close data-modal-overlay></div>
+            <div class="modal-content w-[1000px]">
+              <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ResipmZmpDU" title="Build a static website within 5min (Hugo + Netlify + Forestry)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

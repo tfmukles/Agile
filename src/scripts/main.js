@@ -77,6 +77,17 @@
       delay: 1,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      1350: { slidesPerView: 10},
+      1260: { slidesPerView: 8.5},
+      1180: { slidesPerView: 8},
+      1024: { slidesPerView: 7},
+      790: { slidesPerView: 6},
+      400: {slidesPerView: 3},
+      520: { slidesPerView: 4 },
+      680: { slidesPerView: 5},
+      0: { slidesPerView: 2.4},
+    }
   });
 
   new Swiper(".logo-animation-rtl", {
@@ -91,6 +102,17 @@
       reverseDirection: true,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      1350: { slidesPerView: 10},
+      1260: { slidesPerView: 8.5},
+      1180: { slidesPerView: 8},
+      1024: { slidesPerView: 7},
+      790: { slidesPerView: 6},
+      400: {slidesPerView: 3},
+      520: { slidesPerView: 4 },
+      680: { slidesPerView: 5},
+      0: { slidesPerView: 2.4},
+    }
   });
 
   new Swiper(".testimonial-slider", {
@@ -163,7 +185,7 @@
   const closeModalButtons = document.querySelectorAll("[data-modal-close]");
 
   function openModal(modal) {
-    if (modeal === null) {
+    if (modal === null) {
       return null;
     }
     const overlay = modal.querySelector("[data-modal-overlay]");

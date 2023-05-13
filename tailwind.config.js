@@ -1,5 +1,6 @@
 const theme = require("./src/theme.json");
 
+
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
 let h6 = font_base / font_base;
@@ -82,6 +83,7 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      backgroundImage: {...theme.backgroundImage}
     },
   },
   plugins: [

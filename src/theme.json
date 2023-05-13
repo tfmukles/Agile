@@ -42,5 +42,8 @@
       "base": "16",
       "scale": "1.3"
     }
+  },
+  "backgroundImage": {
+    "wave": "url('/images/wave.png')"
   }
 }

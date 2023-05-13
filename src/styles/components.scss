@@ -7,7 +7,7 @@
 }
 
 .container-fluid {
-  @apply max-w-[1560px] mx-auto py-7 lg:py-[85px] bg-[#FAF9FC];
+  @apply max-w-[1560px] mx-auto py-7 lg:py-[85px] bg-secondary;
 }
 
 .section-title{
@@ -24,11 +24,11 @@
 
 // banner
 .wave{
-  @apply after:bg-no-repeat after:bg-[url('/images/banner/wave.png')] after:absolute after:top-[50px] after:md:top-16 lg:after:top-16 after:left-0 after:w-40 after:bg-cover after:h-4;
+  @apply relative after:bg-no-repeat after:bg-wave after:absolute after:top-[50px] after:md:top-16 lg:after:top-16 after:left-0 after:w-40 after:bg-cover after:h-4;
 }
 
 .spring{
-  @apply after:absolute after:bg-no-repeat after:opacity-30 after:right-1 after:lg:right-0 after:-top-4 after:bg-[url('/images/banner/spring.png')] after:w-14 after:h-14;
+  @apply relative after:absolute after:bg-no-repeat after:opacity-30 after:right-1 after:lg:right-0 after:-top-4 after:bg-[url('/images/spring.png')] after:w-14 after:h-14;
 }
 
 .star{
@@ -45,7 +45,7 @@
 
 // form style
 .form-input {
-  @apply w-full rounded border-transparent bg-theme-light px-6 py-2 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
+  @apply w-full rounded-[10px] border-transparent bg-theme-light px-6 py-2 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
 }
 
 .form-label {
