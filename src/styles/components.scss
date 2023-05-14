@@ -2,7 +2,7 @@
 .section {
   @apply lg:py-[66px] py-8;
   &-sm {
-    @apply py-16 xl:py-20;
+    @apply py-6 xl:py-12;
   }
 }
 
@@ -45,11 +45,11 @@
 
 // form style
 .form-input {
-  @apply w-full rounded-[10px] border-transparent bg-theme-light px-6 py-2 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
+  @apply w-full rounded-[10px] border-transparent bg-white shadow px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
 }
 
 .form-label {
-  @apply mb-4 block font-secondary text-xl font-normal text-dark dark:text-darkmode-light;
+  @apply mb-4 block font-primary text-xl font-normal text-dark;
 }
 
 // social icons
@@ -58,7 +58,7 @@
   li {
     @apply inline-block;
     a {
-      @apply flex h-9 w-9 items-center justify-center rounded bg-primary text-center leading-9 text-white dark:bg-darkmode-primary dark:text-dark;
+      @apply flex h-9 w-9 items-center justify-center rounded bg-primary text-center leading-9 text-white;
       svg {
         @apply h-5 w-5;
       }
@@ -75,7 +75,7 @@
       @apply mr-3;
     }
     p {
-      @apply font-secondary text-xl font-semibold text-dark dark:text-darkmode-light;
+      @apply font-secondary text-xl font-semibold text-dark ;
     }
   }
   &-body {
@@ -108,16 +108,16 @@
 
 // swiper pagination
 .swiper-pagination-bullet {
-  @apply h-2.5 w-2.5 bg-theme-light opacity-100 dark:bg-darkmode-theme-light;
+  @apply h-2.5 w-2.5 bg-theme-light opacity-100 ;
 
   &-active {
-    @apply h-4 w-4 bg-primary dark:bg-darkmode-primary;
+    @apply h-4 w-4 bg-primary;
   }
 }
 
 // tab
 .tab {
-  @apply overflow-hidden rounded-lg border border-border dark:border-darkmode-border;
+  @apply overflow-hidden rounded-lg border border-border;
   &-nav {
     @apply flex border-b border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light;
     @apply m-0 #{!important};
@@ -192,7 +192,7 @@
   @apply prose-img:max-w-full prose-img:rounded;
   @apply prose-hr:border-border prose-hr:dark:border-darkmode-border;
   @apply prose-p:text-base prose-p:text-text prose-p:dark:text-darkmode-text;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:dark:border-darkmode-primary prose-blockquote:dark:bg-darkmode-theme-light prose-blockquote:dark:text-darkmode-light;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:dark:border-darkmode-primary prose-blockquote:dark:bg-darkmode-theme-light prose-blockquote:dark:text-darkmode-light;
   @apply prose-pre:rounded-lg prose-pre:bg-theme-light prose-pre:dark:bg-darkmode-theme-light;
   @apply prose-code:px-1 prose-code:text-primary prose-code:dark:text-darkmode-primary;
   @apply prose-strong:text-dark prose-strong:dark:text-darkmode-text;
@@ -219,22 +219,7 @@
   transition-timing-function: linear;
 }
 
-//button-button
-.video-button {
-  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary rounded-full;
-  animation: videoButton 5s ease-in-out infinite;
-}
-
-@keyframes videoButton {
-  0%{
-    @apply shadow-[0_0_0_0] shadow-primary/20;
-  }
-  
-  75%{
-    @apply shadow-[0_0_0_50px] shadow-primary/0;
-  }
-
-  100%{
-    @apply shadow-[0_0_0_100px] shadow-primary
-  }
+.text-linear {
+  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text;
+  -webkit-text-fill-color: transparent;
 }

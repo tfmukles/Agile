@@ -1,149 +1,242 @@
 @@include('components/page-header.html', { "title": "Blog" })
 
 <!-- Blog -->
-<section class="section">
+<section class="section pt-6">
   <div class="container">
-    <div class="row gx-5">
-      <!-- blog posts -->
-      <div class="lg:col-8">
-        <div class="row">
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
-          <div class="mb-14 md:col-6">
-            @@include("components/blog-card.html")
-          </div>
+    <div class="row items-center">
+      <div class="lg:col-7">
+        <div class="relative">
+          <img class="lg:mb-mb-0 mb-4 w-full rounded-[10px]" src="images/blog/1.png" alt="blog-image" />
+          <a href=""
+            class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Business</a>
         </div>
-        @@include('components/pagination.html')
       </div>
-      <!-- sidebar -->
-      <div class="lg:col-4">
-        <!-- categories -->
-        <div class="mb-8">
-          <h5 class="mb-6">Categories</h5>
-          <div class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
-            <ul class="space-y-4">
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href="category-single.html"
-                >
-                  Application <span>( 03 )</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href="category-single.html"
-                >
-                  Technology <span>( 03 )</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href="category-single.html"
-                >
-                  Software <span>( 03 )</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href="category-single.html"
-                >
-                  Business <span>( 03 )</span>
-                </a>
-              </li>
-            </ul>
+      <div class="lg:col">
+        <h3 class="mb-4">
+          Why Needs it to Automate User Lifecycle Management Today and tomorrow
+          for better.
+        </h3>
+        <p class="mb-6">
+          Proven aptitude torate and build strong relationships withoProven
+          aptitude to collaborate and build strong relationships with
+          custoProven aptitude to collaborate and.
+        </p>
+        <div class="flex items-center space-x-6">
+          <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+          <p>Kathryn Murphy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gx-4">
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/2.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Business</a>
+          </div>
+          <h3 class="mt-6">
+            The flying start of your blog with Pelican and Github Pages
+            countdown
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
           </div>
         </div>
-        <!-- tags -->
-        <div class="mb-8">
-          <h5 class="mb-6">Tags</h5>
-          <div class="rounded bg-theme-light p-6 dark:bg-darkmode-theme-light">
-            <ul>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  nextjs
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  webdev
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  webdev
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  javascript
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  opensource
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  angular
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  html
-                </a>
-              </li>
-              <li class="inline-block">
-                <a
-                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href="category-single.html"
-                >
-                  hugo
-                </a>
-              </li>
-            </ul>
+      </div>
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/3.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Tech
+              blog</a>
+          </div>
+          <h3 class="mt-6">
+            Boost Productivity Through Optimized Azure Storage Management
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/4.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Marketing</a>
+          </div>
+          <h3 class="mt-6">
+            Building a Successful in the
+            Proptech SaaS: An Inside Look at Real Estate Software
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/5.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Developer</a>
+          </div>
+          <h3 class="mt-6">
+            Markdoc and Next.js to Build a Git-powered Markdown Blog
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/6.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Developer</a>
+          </div>
+          <h3 class="mt-6">
+            Markdoc and Next.js to Build a Git-powered Markdown Blog
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/7.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Designer</a>
+          </div>
+          <h3 class="mt-6">
+            Meet Agile  executive Chief Revenue Officer, Merick den Turkoglu morgan
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/8.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Food Blog</a>
+          </div>
+          <h3 class="mt-6">
+            Software Developer should write a blogEvery Software Developer should
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/9.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Food Blog</a>
+          </div>
+          <h3 class="mt-6">
+            Meet Agile  executive Chief Revenue Officer, Merick den Turkoglu morgan
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- blog posts -->
+      <div class="md:col-6 lg:col-4">
+        <div class="mt-12">
+          <div class="relative">
+            <img width="424" height="230" class="w-full rounded-[8px]" src="images/blog/10.png" alt="blog-post" />
+            <a href=""
+              class="absolute right-3 top-3 rounded bg-dark px-[22px] py-2 text-sm font-semibold text-white">Food Blog</a>
+          </div>
+          <h3 class="mt-6">
+            Content Structure: The Do's and Dont's of Content Creation more
+          </h3>
+          <p class="mb-6">
+            Proven aptitude torate and build strong relationships withoProven
+            aptitude to collaborate and build man strong relationships with
+            custoProven aptitude .
+          </p>
+          <div class="flex items-center space-x-6">
+            <img class="h-10 w-10 flex-none rounded-full" src="images/blog/profile.png" alt="profile" />
+            <p>Kathryn Murphy</p>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 <!-- /Blog -->

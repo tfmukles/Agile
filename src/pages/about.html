@@ -1,8 +1,8 @@
+@@include('components/page-header.html', { "title": "ABOUT US" })
 <section class="section pt-0">
-  @@include('components/page-header.html', { "title": "ABOUT US" })
   <div class="container">
     <div class="lg:col-10 mx-auto spring after:hidden after:lg:block after:bg-[url('/images/spring-revert.png')] after:h-[85px] after:w-[71px] after:-right-[52px] after:top-2">
-      <h3 class="text-center my-12 lg:my-28">
+      <h3 class="text-center mb-12 lg:mb-28">
         "<span class="wave after:top-7 md:after:top-9">Our mission </span> to revolutionize the workplace by improving the function of IT, enabling businesses to achieve greater success thriving and efficiency."
       </h3>
     </div>
@@ -93,20 +93,4 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="lg:col-5">
-        <h2><span class="wave after:top-9 md:after:top-12">Get started</span> 7 days free trial</h2>
-        <p class="mb-6">Lorem ipsum dolor sit amet consectetur corporis  consectetur maxime corporis cumqLorcorporis  consectetur.</p>
-        <div class="flex flex-wrap">
-          <input class="form-input flex-1 w-auto m-2" type="email" name="email" id="email" />
-          <button class="btn btn-primary lg:ml-4 m-2">Know About Us</button>
-        </div>
-      </div>
-      <div class="lg:col-6">
-        <img class="mx-auto lg:ml-auto" width="360" height="281" src="images/about/5.png" alt="about-img">
-      </div>
-    </div>
-  </div>
-</section>
+@@include('call-to-action.html')
