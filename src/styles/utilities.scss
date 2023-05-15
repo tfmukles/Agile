@@ -21,7 +21,7 @@
 
 //video button
 .video-button{
-  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary rounded-full;
+  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary flex items-center justify-center z-30 rounded-full;
 
   span{
     @apply absolute scale-0 top-0 -z-10 left-0 w-full h-full rounded-full bg-inherit  opacity-80;

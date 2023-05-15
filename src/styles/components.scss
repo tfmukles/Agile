@@ -186,18 +186,18 @@
 .content {
   @apply prose max-w-none;
   @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em];
-  @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
+  @apply prose-h1:text-h1 md:prose-h1:text-h1;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
-  @apply prose-img:max-w-full prose-img:rounded;
-  @apply prose-hr:border-border prose-hr:dark:border-darkmode-border;
-  @apply prose-p:text-base prose-p:text-text prose-p:dark:text-darkmode-text;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:dark:border-darkmode-primary prose-blockquote:dark:bg-darkmode-theme-light prose-blockquote:dark:text-darkmode-light;
+  @apply prose-img:max-w-full prose-img:my-3 prose-img:rounded;
+  @apply prose-hr:border-border;
+  @apply prose-p:text-lg prose-p:my-3 prose-p:text-light;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:absolute prose-blockquote:before:left-6 prose-blockquote:before:top-8 prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:absolute prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:right-6 prose-blockquote:after:top-full prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
   @apply prose-pre:rounded-lg prose-pre:bg-theme-light prose-pre:dark:bg-darkmode-theme-light;
   @apply prose-code:px-1 prose-code:text-primary prose-code:dark:text-darkmode-primary;
   @apply prose-strong:text-dark prose-strong:dark:text-darkmode-text;
   @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary prose-a:dark:text-darkmode-text hover:prose-a:dark:text-darkmode-primary;
-  @apply prose-li:text-text prose-li:dark:text-darkmode-text;
+  @apply prose-li:text-text;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""] prose-table:before:dark:border-darkmode-border;
   @apply prose-thead:border-border prose-thead:bg-theme-light prose-thead:dark:border-darkmode-border prose-thead:dark:bg-darkmode-theme-light;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark prose-th:dark:text-darkmode-text;
