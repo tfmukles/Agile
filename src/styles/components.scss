@@ -1,13 +1,13 @@
 // section style
 .section {
-  @apply lg:py-[66px] py-8;
+  @apply lg:py-[58px] py-8;
   &-sm {
-    @apply py-6 xl:py-12;
+    @apply py-4 lg:py-6;
   }
 }
 
 .container-fluid {
-  @apply max-w-[1560px] mx-auto py-7 lg:py-[85px] bg-secondary;
+  @apply max-w-[1560px] mx-auto py-7 lg:py-[81px] bg-secondary;
 }
 
 .section-title{
@@ -49,7 +49,7 @@
 }
 
 .form-label {
-  @apply mb-4 block font-primary text-xl font-normal text-dark;
+  @apply mb-4 block font-primary text-lg font-normal text-dark;
 }
 
 // social icons
