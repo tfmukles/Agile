@@ -49,7 +49,7 @@
 }
 
 .form-label {
-  @apply mb-4 block font-primary text-lg font-normal text-dark;
+  @apply mb-4 block font-primary text-lg font-normal text-dark text-left;
 }
 
 // social icons
@@ -192,7 +192,7 @@
   @apply prose-img:max-w-full prose-img:my-3 prose-img:rounded;
   @apply prose-hr:border-border;
   @apply prose-p:text-lg prose-p:my-3 prose-p:text-light;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:absolute prose-blockquote:before:left-6 prose-blockquote:before:top-8 prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:absolute prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:right-6 prose-blockquote:after:top-full prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:inline-block prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:inline-block prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
   @apply prose-pre:rounded-lg prose-pre:bg-theme-light prose-pre:dark:bg-darkmode-theme-light;
   @apply prose-code:px-1 prose-code:text-primary prose-code:dark:text-darkmode-primary;
   @apply prose-strong:text-dark prose-strong:dark:text-darkmode-text;
