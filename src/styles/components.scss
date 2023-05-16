@@ -45,7 +45,7 @@
 
 // form style
 .form-input {
-  @apply w-full rounded-[10px] border-transparent bg-white shadow px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
+  @apply w-full rounded-[10px] border-transparent bg-theme-light shadow px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent;
 }
 
 .form-label {
@@ -119,17 +119,17 @@
 .tab {
   @apply overflow-hidden rounded-lg border border-border;
   &-nav {
-    @apply flex border-b border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light;
+    @apply flex border-b border-border bg-theme-light;
     @apply m-0 #{!important};
     @apply list-none #{!important};
 
     &-item {
-      @apply cursor-pointer border-b-[3px] border-border py-2 text-lg text-dark opacity-80 dark:border-light;
+      @apply cursor-pointer border-b-[3px] border-border py-2 text-lg text-dark opacity-80;
       @apply my-0 #{!important};
       @apply px-8 #{!important};
 
       &.active {
-        @apply border-b-[3px] border-dark opacity-100 dark:border-darkmode-primary;
+        @apply border-b-[3px] border-dark opacity-100;
       }
     }
   }
@@ -148,9 +148,9 @@
 
 // accordion
 .accordion {
-  @apply mb-6 overflow-hidden rounded-lg border border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light;
+  @apply mb-6 overflow-hidden rounded-lg border border-border bg-theme-light;
   &-header {
-    @apply flex cursor-pointer items-center justify-between px-8 py-4 text-lg text-dark dark:bg-darkmode-theme-light dark:text-darkmode-light;
+    @apply flex cursor-pointer items-center justify-between px-8 py-4 text-lg text-dark;
   }
   &-icon {
     @apply h-[.8em] w-[.8em] rotate-[-90deg] transition-transform duration-200;
@@ -172,13 +172,13 @@
 .modal {
   @apply fixed inset-0 z-40 hidden h-full w-full overflow-auto;
   &-overlay {
-    @apply fixed inset-0 z-40 hidden h-full w-full bg-black bg-opacity-40;
+    @apply fixed inset-0 z-40 hidden h-full w-full bg-theme-dark bg-opacity-40;
   }
   &-content {
-    @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-lg bg-body p-8 dark:bg-darkmode-body;
+    @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-lg bg-body p-8 ;
   }
   &-close {
-    @apply absolute right-3 top-3 h-8 w-8 rounded-full bg-theme-light text-center leading-8 text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark;
+    @apply absolute right-3 top-3 h-8 w-8 rounded-full bg-theme-light text-center leading-8 text-dark;
   }
 }
 
@@ -193,16 +193,16 @@
   @apply prose-hr:border-border;
   @apply prose-p:text-lg prose-p:my-3 prose-p:text-light;
   @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:inline-block prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:inline-block prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
-  @apply prose-pre:rounded-lg prose-pre:bg-theme-light prose-pre:dark:bg-darkmode-theme-light;
-  @apply prose-code:px-1 prose-code:text-primary prose-code:dark:text-darkmode-primary;
-  @apply prose-strong:text-dark prose-strong:dark:text-darkmode-text;
-  @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary prose-a:dark:text-darkmode-text hover:prose-a:dark:text-darkmode-primary;
+  @apply prose-pre:rounded-lg prose-pre:bg-theme-light;
+  @apply prose-code:px-1 prose-code:text-primary;
+  @apply prose-strong:text-dark;
+  @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary;
   @apply prose-li:text-text;
-  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""] prose-table:before:dark:border-darkmode-border;
-  @apply prose-thead:border-border prose-thead:bg-theme-light prose-thead:dark:border-darkmode-border prose-thead:dark:bg-darkmode-theme-light;
-  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark prose-th:dark:text-darkmode-text;
-  @apply prose-tr:border-border prose-tr:dark:border-darkmode-border;
-  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] prose-td:dark:text-darkmode-text;
+  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""];
+  @apply prose-thead:border-border prose-thead:bg-theme-light;
+  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark;
+  @apply prose-tr:border-border;
+  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
 }
 
 
@@ -210,8 +210,19 @@
 .list-group{
   @apply space-y-5;
 
+  &.list-group-sm{
+    @apply space-y-3;
+  };
+  
+  &.list-group-lg {
+    @apply space-y-7;
+    .list-item{
+      @apply pl-8 before:w-3 before:h-3;
+    }
+  };
+
   .list-item {
-    @apply pl-6 text-lg relative text-dark before:absolute before:w-2 before:h-2 before:rounded-full before:bg-primary before:left-0 before:top-1/2 before:-translate-y-1/2;
+    @apply pl-6 text-lg relative text-dark before:absolute before:w-2 before:h-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-[#6049CD] before:left-0 before:top-1/2 before:-translate-y-1/2;
   }
 }
 
@@ -220,6 +231,6 @@
 }
 
 .text-linear {
-  @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text;
+  @apply bg-gradient-to-r from-primary to-border bg-clip-text;
   -webkit-text-fill-color: transparent;
 }
