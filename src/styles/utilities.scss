@@ -1,5 +1,10 @@
 .bg-gradient {
-  @apply bg-gradient-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%];
+  @apply bg-gradient-to-r from-primary to-[#6049CD];
+}
+
+.text-linear {
+  @apply  bg-gradient-to-r from-primary to-[#6049CD]  bg-clip-text;
+  -webkit-text-fill-color: transparent;
 }
 
 .rounded-sm {
@@ -21,7 +26,7 @@
 
 //video button
 .video-button{
-  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary flex items-center justify-center z-10 rounded-full;
+  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-theme-light w-20 h-20 bg-primary flex items-center justify-center z-10 rounded-full;
 
   span{
     @apply absolute scale-0 top-0 -z-10 left-0 w-full h-full rounded-full bg-inherit  opacity-80;

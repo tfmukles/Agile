@@ -222,15 +222,10 @@
   };
 
   .list-item {
-    @apply pl-6 text-lg relative text-dark before:absolute before:w-2 before:h-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-[#6049CD] before:left-0 before:top-1/2 before:-translate-y-1/2;
+    @apply pl-6 text-lg relative before:absolute before:w-2 before:h-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-[#6049CD] before:left-0 before:top-1/2 before:-translate-y-1/2;
   }
 }
 
 .logo-animation, .swiper-wrapper{
   transition-timing-function: linear;
-}
-
-.text-linear {
-  @apply bg-gradient-to-r from-primary to-border bg-clip-text;
-  -webkit-text-fill-color: transparent;
 }
