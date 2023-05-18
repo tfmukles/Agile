@@ -7,13 +7,13 @@
 }
 
 .container-fluid {
-  @apply max-w-[1560px] mx-auto py-7 lg:py-[81px] bg-secondary;
+  @apply max-w-[1560px] mx-auto py-7 lg:py-[81px] bg-theme-light;
 }
 
 .section-title{
   @apply lg:col-5 mx-auto text-center mb-5 lg:mb-14;
   .main-tilte {
-    @apply rounded-lg text-sm capitalize font-semibold text-white bg-primary px-5 mb-2 py-2 inline-block;
+    @apply rounded text-sm capitalize font-semibold text-white bg-primary px-5 mb-2 py-2 inline-block;
   }
 }
 
@@ -23,18 +23,6 @@
 }
 
 // banner
-.wave{
-  @apply relative after:bg-no-repeat after:bg-wave after:absolute after:top-[50px] after:md:top-16 lg:after:top-16 after:left-0 after:w-40 after:bg-cover after:h-4;
-}
-
-.spring{
-  @apply relative after:absolute after:bg-no-repeat after:opacity-30 after:right-1 after:lg:right-0 after:-top-4 after:bg-[url('/images/spring.png')] after:w-14 after:h-14;
-}
-
-.star{
-  @apply before:absolute before:-top-9 before:left-1 before:lg:-top-16 before:lg:left-11 2xl:before:-left-[12%] before:bg-[url('/images/star.png')] before:w-10 before:h-10 before:bg-no-repeat before:bg-contain;
-}
-
 .swiper-pagination-bullet {
   @apply w-[10px] h-[10px] rounded-none bg-transparent border border-primary;
 }
@@ -45,7 +33,7 @@
 
 // form style
 .form-input {
-  @apply w-full rounded-[10px] border-transparent bg-theme-light shadow px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent;
+  @apply w-full rounded-lg border-transparent bg-white shadow px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent;
 }
 
 .form-label {
@@ -108,7 +96,7 @@
 
 // swiper pagination
 .swiper-pagination-bullet {
-  @apply h-2.5 w-2.5 bg-theme-light opacity-100 ;
+  @apply h-2.5 w-2.5 bg-white opacity-100 ;
 
   &-active {
     @apply h-4 w-4 bg-primary;
@@ -119,7 +107,7 @@
 .tab {
   @apply overflow-hidden rounded-lg border border-border;
   &-nav {
-    @apply flex border-b border-border bg-theme-light;
+    @apply flex border-b border-border bg-white;
     @apply m-0 #{!important};
     @apply list-none #{!important};
 
@@ -148,7 +136,7 @@
 
 // accordion
 .accordion {
-  @apply mb-6 overflow-hidden rounded-lg border border-border bg-theme-light;
+  @apply mb-6 overflow-hidden rounded-lg border border-border bg-white;
   &-header {
     @apply flex cursor-pointer items-center justify-between px-8 py-4 text-lg text-dark;
   }
@@ -178,7 +166,7 @@
     @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-lg bg-body p-8 ;
   }
   &-close {
-    @apply absolute right-3 top-3 h-8 w-8 rounded-full bg-theme-light text-center leading-8 text-dark;
+    @apply absolute right-3 top-3 h-8 w-8 rounded-full bg-white text-center leading-8 text-dark;
   }
 }
 
@@ -192,14 +180,14 @@
   @apply prose-img:max-w-full prose-img:my-3 prose-img:rounded;
   @apply prose-hr:border-border;
   @apply prose-p:text-lg prose-p:my-3 prose-p:text-light;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:inline-block prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:inline-block prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
-  @apply prose-pre:rounded-lg prose-pre:bg-theme-light;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:relative prose-blockquote:before:inline-block prose-blockquote:before:w-10 prose-blockquote:before:h-10 prose-blockquote:before:bg-[url('/images/blog/invited-comma-left.png')] prose-blockquote:before:bg-no-repeat prose-blockquote:after:inline-block prose-blockquote:after:w-10 prose-blockquote:after:h-10 prose-blockquote:after:bg-[url("/images/blog/invited-comma-right.png")] prose-blockquote:after:bg-no-repeat;
+  @apply prose-pre:rounded-lg prose-pre:bg-white;
   @apply prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-dark;
   @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary;
   @apply prose-li:text-text;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""];
-  @apply prose-thead:border-border prose-thead:bg-theme-light;
+  @apply prose-thead:border-border prose-thead:bg-white;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark;
   @apply prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
@@ -222,7 +210,7 @@
   };
 
   .list-item {
-    @apply pl-6 text-lg relative before:absolute before:w-2 before:h-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-[#6049CD] before:left-0 before:top-1/2 before:-translate-y-1/2;
+    @apply pl-6 text-lg relative before:absolute before:w-2 before:h-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-secondary before:left-0 before:top-1/2 before:-translate-y-1/2;
   }
 }
 

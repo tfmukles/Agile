@@ -3,11 +3,11 @@
     "default": {
       "theme_color": {
         "primary": "#9160FD",
-        "secondary": "#FAF9FC",
+        "secondary": "#6049CD",
         "body": "#fff",
         "purple": "#6049CD",
         "border": "#DFDBDB",  
-        "theme_light": "#fff",
+        "theme_light": "#FAF9FC",
         "theme_dark": "#000"
       },
       "text_color": {
@@ -43,8 +43,5 @@
       "base": "16",
       "scale": "1.3"
     }
-  },
-  "backgroundImage": {
-    "wave": "url('/images/wave.png')"
   }
 }

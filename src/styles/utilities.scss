@@ -1,23 +1,27 @@
 .bg-gradient {
-  @apply bg-gradient-to-r from-primary to-[#6049CD];
+  @apply bg-gradient-to-r from-primary to-secondary;
 }
 
 .text-linear {
-  @apply  bg-gradient-to-r from-primary to-[#6049CD]  bg-clip-text;
+  @apply  bg-gradient-to-r from-primary to-secondary  bg-clip-text;
   -webkit-text-fill-color: transparent;
 }
 
 .rounded-sm {
-  @apply rounded-[4px];
-}
-.rounded {
   @apply rounded-[6px];
 }
+
+.rounded {
+  @apply rounded-[8px];
+}
 .rounded-lg {
-  @apply rounded-[12px];
+  @apply rounded-[10px];
 }
 .rounded-xl {
   @apply rounded-[16px];
+}
+.rounded-2xl {
+  @apply rounded-[24px];
 }
 
 .shadow{
@@ -26,7 +30,7 @@
 
 //video button
 .video-button{
-  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-theme-light w-20 h-20 bg-primary flex items-center justify-center z-10 rounded-full;
+  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary flex items-center justify-center z-10 rounded-full;
 
   span{
     @apply absolute scale-0 top-0 -z-10 left-0 w-full h-full rounded-full bg-inherit  opacity-80;

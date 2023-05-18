@@ -7,11 +7,11 @@
 }
 
 .btn-lg {
-  @apply px-[3.08rem] text-lg py-[15px] bg-red-600 rounded-md;
+  @apply px-[3.08rem] text-lg py-[15px] bg-red-600 rounded-lg;
 }
 
 .btn-primary {
-  @apply border-primary bg-gradient-to-r from-primary to-[#6049CD] text-white leading-[28px];
+  @apply border-primary bg-gradient-to-r from-primary to-secondary text-white leading-[28px];
 }
 
 .btn-outline-primary {
