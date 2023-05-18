@@ -5,7 +5,6 @@
         "primary": "#9160FD",
         "secondary": "#6049CD",
         "body": "#fff",
-        "purple": "#6049CD",
         "border": "#DFDBDB",  
         "theme_light": "#FAF9FC",
         "theme_dark": "#000"
@@ -14,21 +13,6 @@
         "default": "#444444",
         "dark": "#221246",
         "light": "#656565"
-      }
-    },
-    "darkmode": {
-      "theme_color": {
-        "primary": "#9160FD",
-        "secondary": "#FAF9FC",
-        "body": "#fff",
-        "border": "#3E3E3E",
-        "theme_light": "#222222",
-        "theme-dark": ""
-      },
-      "text_color": {
-        "default": "#B4AFB6",
-        "dark": "#fff",
-        "light": "#B4AFB6"
       }
     }
   },
