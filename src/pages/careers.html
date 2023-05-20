@@ -141,15 +141,25 @@
         <div class="relative flex flex-col space-y-5  sm:flex-row sm:space-y-0 mt-14 justify-center">
           <div
             class="relative mr-3 pr-3 lg:mr-8 sm:pr-8 after:hidden sm:after:block after:absolute after:right-0 after:top-0 after:h-full after:w-0.5 after:bg-primary">
-            <select
+            <select data-department
               class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[56px] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
-              <option>All Department</option>
+              <option value="*">All Department</option>
+              <option value="digital-marketing">Digital Marketing</option>
+              <option value="data-engineer">Data Engineer</option>
+              <option value="graphics-designer">Graphics Designer</option>
+              <option value="software-engineer">Software Engineer</option>
+              <option value="fullstack-engineer">FullStack Engineer</option>
             </select>
           </div>
 
-          <select
-          class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[56px] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
-            <option>All Office</option>
+          <select data-office
+            class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[56px] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
+            <option value="*">All Office</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="hungary">Hungary</option>
+            <option value="brazil">Brazil</option>
+            <option value="italy">Italy</option>
           </select>
         </div>
       </div>
@@ -157,7 +167,7 @@
 
     <div class="rounded-lg p-8 shadow mt-[52px]">
       <div class="row g-4">
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["digital-marketing", "usa"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">USA</h6>
@@ -169,7 +179,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["data-engineer", "uk"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">UK</h6>
@@ -181,7 +191,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["graphics-designer", "france"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">FRANCE</h6>
@@ -193,7 +203,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["software-engineer", "hungary"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Hungary</h6>
@@ -205,7 +215,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["software-engineer", "colombia"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Colombia</h6>
@@ -217,7 +227,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["data-engineer", "usa"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Costa Rica</h6>
@@ -229,7 +239,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["software-engineer", "uk"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Eritrea</h6>
@@ -241,7 +251,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["graphics-engineer", "france"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Brazil</h6>
@@ -253,7 +263,7 @@
           </div>
         </div>
 
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["fullstack-engineer", "france"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Kiribati</h6>
@@ -264,7 +274,7 @@
             <h5 class="mb-8 mt-7">FullStack Senior Software Engineer</h5>
           </div>
         </div>
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["fullstack-engineer", "uk"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Iceland</h6>
@@ -275,7 +285,7 @@
             <h5 class="mb-8 mt-7">FullStack Senior Software Engineer</h5>
           </div>
         </div>
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["digital-marketing", "usa"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Italy</h6>
@@ -286,7 +296,7 @@
             <h5 class="mb-8 mt-7">Marketing Operations Specialist</h5>
           </div>
         </div>
-        <div class="lg:col-4 md:col-6">
+        <div data-filter='["data-engineer", "uk"]' class="lg:col-4 md:col-6">
           <div class="rounded bg-theme-light px-4 py-5">
             <div class="flex justify-between">
               <h6 class="font-primary">Denmark</h6>
