@@ -236,16 +236,17 @@
   const departmentSelect = document.querySelector("[data-department]");
   const locationSelect = document.querySelector("[data-office]");
   const cardList = document.querySelectorAll("[data-filter]");
+  console.log(departmentSelect);
 
   let selectedDepartment = "*";
   let selectedLocation = "*";
 
-  departmentSelect.addEventListener("change", (e) => {
+  departmentSelect?.addEventListener("change", (e) => {
     selectedDepartment = e.target.value;
     filtrCardList(selectedDepartment);
   });
 
-  locationSelect.addEventListener("change", (e) => {
+  locationSelect?.addEventListener("change", (e) => {
     selectedLocation = e.target.value;
     filtrCardList(selectedLocation);
   });
