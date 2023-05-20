@@ -35,36 +35,42 @@
 
   // ####################### Header #########################
   const header = document.querySelector(".header");
-  window.addEventListener("scroll", function(event){
+  window.addEventListener("scroll", function (event) {
     const scrollY = this.window.pageYOffset;
-    if(scrollY >= 30){
+    if (scrollY >= 30) {
       header.classList.add("shadow");
       return;
     }
     header.classList.remove("shadow");
-  })
-
+  });
 
   // ####################### Brand Slider #########################
   new Swiper(".brand-slider", {
-    spaceBetween: 24,
+    spaceBetween: 12,
     loop: true,
-   
+
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1.3,
       },
-     700: {
-      slidesPerView: 3,
-     },
+      450: {
+        slidesPerView: 2.5,
+      },
+      700: {
+        slidesPerView: 3,
+      },
       850: {
         slidesPerView: 4,
       },
-      1024:{
-        slidesPerView: 5
-      }
+      1024: {
+        slidesPerView: 5,
+      },
+
+      1600: {
+        slidesPerView: 5.5,
+      },
     },
-  })
+  });
 
   // ########################## Logo Animation ##############################
   new Swiper(".logo-animation", {
@@ -78,21 +84,21 @@
       disableOnInteraction: false,
     },
     breakpoints: {
-      1350: { slidesPerView: 10},
-      1260: { slidesPerView: 8.5},
-      1180: { slidesPerView: 8},
-      1024: { slidesPerView: 7},
-      790: { slidesPerView: 6},
-      400: {slidesPerView: 3},
+      1350: { slidesPerView: 10 },
+      1260: { slidesPerView: 8.5 },
+      1180: { slidesPerView: 8 },
+      1024: { slidesPerView: 7 },
+      790: { slidesPerView: 6 },
+      400: { slidesPerView: 3 },
       520: { slidesPerView: 4 },
-      680: { slidesPerView: 5},
-      0: { slidesPerView: 2.4},
-    }
+      680: { slidesPerView: 5 },
+      0: { slidesPerView: 2.4 },
+    },
   });
 
   new Swiper(".logo-animation-rtl", {
     slidesPerView: 10,
-    direction: 'horizontal',
+    direction: "horizontal",
     spaceBetween: 10,
     allowTouchMove: false,
     loop: true,
@@ -103,16 +109,16 @@
       disableOnInteraction: false,
     },
     breakpoints: {
-      1350: { slidesPerView: 10},
-      1260: { slidesPerView: 8.5},
-      1180: { slidesPerView: 8},
-      1024: { slidesPerView: 7},
-      790: { slidesPerView: 6},
-      400: {slidesPerView: 3},
+      1350: { slidesPerView: 10 },
+      1260: { slidesPerView: 8.5 },
+      1180: { slidesPerView: 8 },
+      1024: { slidesPerView: 7 },
+      790: { slidesPerView: 6 },
+      400: { slidesPerView: 3 },
       520: { slidesPerView: 4 },
-      680: { slidesPerView: 5},
-      0: { slidesPerView: 2.4},
-    }
+      680: { slidesPerView: 5 },
+      0: { slidesPerView: 2.4 },
+    },
   });
 
   new Swiper(".testimonial-slider", {
@@ -126,7 +132,7 @@
     breakpoints: {
       768: {
         slidesPerView: 2,
-      }
+      },
     },
   });
 
@@ -215,4 +221,46 @@
       closeModal(modal);
     });
   });
+
+  // video player
+  const thumnails = document.querySelectorAll("[data-thumnail]");
+  thumnails.forEach((thumnail) => {
+    thumnail.addEventListener("click", () => {
+      const video = thumnail.nextElementSibling;
+      video.classList.remove("hidden");
+      video.classList.add("block");
+    });
+  });
+
+  // card filter
+  const departmentSelect = document.querySelector("[data-department]");
+  const locationSelect = document.querySelector("[data-office]");
+  const cardList = document.querySelectorAll("[data-filter]");
+
+  let selectedDepartment = "*";
+  let selectedLocation = "*";
+
+  departmentSelect.addEventListener("change", (e) => {
+    selectedDepartment = e.target.value;
+    filtrCardList(selectedDepartment);
+  });
+
+  locationSelect.addEventListener("change", (e) => {
+    selectedLocation = e.target.value;
+    filtrCardList(selectedLocation);
+  });
+
+  const filtrCardList = (filter) => {
+    cardList.forEach((card) => {
+      const attr = card.dataset.filter;
+      if (filter === "*") {
+        card.style.display = "block";
+      } else {
+        const validJSON = attr.replace(/'/g, '"');
+        const filterArray = JSON.parse(validJSON);
+        const isValueInFilter = filterArray.includes(filter);
+        card.style.display = isValueInFilter ? "block" : "none";
+      }
+    });
+  };
 })();
