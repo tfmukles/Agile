@@ -67,8 +67,8 @@
         </div>
       </div>
       <div class="lg:col">
-        <div class="rounded-xl bg-primary/10 py-2 px-4 sm:px-8 relative mt-8 lg:mt-0">
-          <button data-modal-open class="video-button">
+        <div class="rounded-xl overflow-hidden bg-primary/10 py-2 px-4 sm:px-8 relative mt-8 lg:mt-0">
+          <button data-thumnail class="video-button">
             <svg width="37" height="37" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.7853 9.61726C24.561 11.2198 24.561 15.2261 21.7853 16.8286L6.95304 25.392C4.17741 26.9945 0.707868 24.9914 0.707868 21.7863L0.707868 4.65948C0.707868 1.45445 4.17741 -0.548685 6.95305 1.05383L21.7853 9.61726Z"
@@ -79,17 +79,14 @@
             <span></span>
             <span></span>
           </button>
+
           <!-- video modal -->
-          <div class="modal" data-modal>
-            <div class="modal-overlay" data-modal-close data-modal-overlay></div>
-            <div class="modal-content w-[1000px]">
-              <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ResipmZmpDU"
-                title="Build a static website within 5min (Hugo + Netlify + Forestry)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <button class="modal-close" data-modal-close>&times;</button>
-            </div>
+          <div class="absolute hidden z-10 top-0 left-0 w-full h-full">
+            <iframe class="w-full h-full" allowfullscreen
+              src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            </iframe>
           </div>
+
           <div class="flex space-x-6 items-center py-3">
             <div class="space-y-3 flex justify-between flex-1 flex-col ">
               <img class="w-full" width="284" height="198" src="images/banner/banner-1.png" alt="banner-2">
@@ -138,8 +135,7 @@
         <div class="md:col-6">
           <div
             class="px-5 py-5 xl:py-0 flex flex-col xl:flex-row items-center justify-center xl:space-x-6 bg-white shadow rounded-lg">
-            <div
-              class="flex-none xl:max-w-[250px] w-full  mb-3 border rounded overflow-hidden">
+            <div class="flex-none xl:max-w-[250px] w-full  mb-3 border rounded overflow-hidden">
               <img class="w-full" width="250" height="175" src="/images/solution/1.png" alt="">
             </div>
             <div class="py-0 pb-1 xl:py-8">
@@ -233,12 +229,51 @@
 
 <!-- Feature -->
 <section class="section">
-  <div class="contianer">
+  <div class="container">
     <div class="section-title">
       <div class="main-tilte">feature</div>
       <h2>why you choose saasby for your bussiness</h2>
     </div>
-    <img class="block mx-auto" src="images/feature/1.png" alt="feature-img" />
+    <div class="relative xl:mx-auto xl:col-10">
+      <img width="584" height="481" class="shadow rounded-lg mx-auto" class="block mx-auto" src="images/feature/1.png"
+        alt="feature-img" />
+
+      <div class="row mt-10 g-4 xl:g-0 xl:mt-0">
+        <div class="xl:absolute top-0 -left-14  md:col-6 xl:col-3">
+          <div class="bg-whtie shadow rounded p-5">
+            <h6 class="mb-1 pt-5 text-xl font-semibold">Accurate Data with more</h6>
+            <p class="text-xs leading-5">Loremipsumdoloit amet onsectetur maxime corporis cumque totam aliquidm sint
+              onthe.</p>
+          </div>
+        </div>
+
+        <div class="xl:absolute bottom-9 -left-3 md:col-6 xl:col-3">
+          <div class="bg-white shadow rounded p-5">
+            <h6 class="mb-1 pt-5 text-xl font-semibold">Email Management</h6>
+            <p class="text-xs leading-5">Lorem ipsum dolor sit amnsectetur maxime corporis cumque totam aliquidm sint
+            </p>
+          </div>
+        </div>
+
+        <div class="xl:absolute right-9 -top-9 md:col-6 xl:col-3">
+          <div class="bg-white shadow rounded p-5 ">
+            <h6 class="mb-1 pt-5 text-xl font-semibold">cost and saving analysis</h6>
+            <p class="text-xs leading-5">Lorem ipsum dolor sit amnsectetur maxime corporis cumque totam aliquidm sint
+            </p>
+          </div>
+        </div>
+
+        <div class="xl:absolute -right-14 bottom-0 md:col-6 xl:col-3">
+          <div class="bg-white shadow rounded p-5">
+            <h6 class="mb-1 pt-5 text-xl font-semibold">cost and saving analysis</h6>
+            <p class="text-xs leading-5">Lorem ipsum dolor sit amnsectetur maxime corporis cumque totam aliquidm sint
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </section>
 <!-- Feature -->
