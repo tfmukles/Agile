@@ -224,8 +224,6 @@
   @apply relative overflow-hidden border-primary bg-white p-10 shadow after:absolute after:-right-[63px] after:top-[5%] after:block after:w-[250px] after:rotate-45 after:bg-primary after:p-2 after:text-center after:font-semibold after:text-white after:content-['_Most_Popular'] lg:-mt-[9%] xl:scale-[1.05];
 }
 
-.shape {
-  background-image: url("/images/shape.svg");
-  background-size: 100px;
-  background-repeat: no-repeat;
+.has-shape {
+  @apply relative before:absolute before:left-0 before:top-[1.1em] before:h-4 before:w-[160px] before:bg-[url('/images/shape.svg')] before:bg-no-repeat;
 }
