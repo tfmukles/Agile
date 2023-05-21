@@ -5,10 +5,9 @@
             <h2>Pricing plans built for your team.</h2>
             <p class="md:px-20 mb-7">When referring to Lorem ipsum, expressions are used, namely fill
                 fictitious text , blind text or text : in short, its meaning can</p>
-
-            <div class="bg-primary/40 px-[5px] py-[5px] inline-block rounded">
-                <button class="btn-primary text-base py-px px-5 btn">Annual</button>
-                <button class="btn text-base py-px px-5 text-dark">Monthly</button>
+            <div class="bg-primary/40 px-[5px] py-[5px] inline-block rounded text-dark">
+                <button data-package="yearly" class="text-base py-px px-5 btn">Annual</button>
+                <button data-package="monthly" class="btn-primary btn text-base py-px px-5">Monthly</button>
             </div>
         </div>
 
@@ -17,7 +16,9 @@
                 <div class="h-full lg:h-auto border bg-white border-primary rounded-xl p-10 shadow">
                     <div class="border-b border-primary text-center">
                         <h5 class="mb-5">Basic</h5>
-                        <h2>$49 USD</h2>
+                        <h2>
+                            <span data-price-yearly="588" data-price-monthly="49">$49</span>USD
+                        </h2>
                         <p class="text-base text-light capitalize mb-3">per user per month</p>
                     </div>
 
@@ -100,7 +101,9 @@
                 <div class="border relative bg-white border-primary rounded-xl p-10 shadow popular">
                     <div class="border-b border-primary text-center">
                         <h5 class="mb-5">Standard</h5>
-                        <h2>$99 USD</h2>
+                        <h2>
+                            <span data-price-yearly="1118" data-price-monthly="99">$99</span> USD
+                        </h2>
                         <p class="text-base text-light capitalize mb-3">per user per month</p>
                     </div>
 
@@ -196,7 +199,9 @@
                 <div class="border bg-white border-primary rounded-xl p-10 shadow">
                     <div class="border-b border-primary text-center">
                         <h5 class="mb-5">Premium</h5>
-                        <h2>$199 USD</h2>
+                        <h2>
+                            <span data-price-yearly="2388" data-price-monthly="199">$199</span> USD
+                        </h2>
                         <p class="text-base text-light capitalize mb-3">per user per month</p>
                     </div>
 

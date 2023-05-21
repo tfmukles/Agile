@@ -236,7 +236,6 @@
   const departmentSelect = document.querySelector("[data-department]");
   const locationSelect = document.querySelector("[data-office]");
   const cardList = document.querySelectorAll("[data-filter]");
-  console.log(departmentSelect);
 
   let selectedDepartment = "*";
   let selectedLocation = "*";
@@ -264,4 +263,22 @@
       }
     });
   };
+
+  const priceTags = document.querySelectorAll("[data-package]");
+  priceTags?.forEach((priceTag) => {
+    priceTag.addEventListener("click", function () {
+      priceTags.forEach((priceTag) => priceTag.classList.remove("btn-primary"));
+      this.classList.add("btn-primary");
+
+      const priceTypes = this.dataset.package;
+      const elements = document.querySelectorAll(
+        "[data-price-" + priceTypes + "]"
+      );
+
+      elements.forEach((element) => {
+        const price = element.getAttribute("data-price-" + priceTypes);
+        element.innerHTML = "$" + price;
+      });
+    });
+  });
 })();
