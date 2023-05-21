@@ -12,7 +12,7 @@
 
     <div class="row g-4 mt-8">
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 flex text-5xl text-primary h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-coins "></i>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 text-5xl text-primary flex h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-person-running"></i>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 text-5xl text-primary flex h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-user-pen"></i>
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 text-5xl text-primary flex h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-award"></i>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 text-5xl text-primary flex h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-briefcase-medical"></i>
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="md:col-6 lg:col-4">
-        <div class="rounded px-6 py-8 text-center shadow">
+        <div class="rounded px-6 py-8 text-center shadow h-full">
           <div
             class="mx-auto mb-7 text-5xl text-primary flex h-20 w-20 items-center justify-center rounded bg-white drop-shadow">
             <i class="fa-solid fa-building"></i>
@@ -142,7 +142,7 @@
           <div
             class="relative mr-3 pr-3 lg:mr-8 sm:pr-8 after:hidden sm:after:block after:absolute after:right-0 after:top-0 after:h-full after:w-0.5 after:bg-primary">
             <select data-department
-              class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[56px] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
+              class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[3.6rem] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
               <option value="*">All Department</option>
               <option value="digital-marketing">Digital Marketing</option>
               <option value="data-engineer">Data Engineer</option>
@@ -150,17 +150,21 @@
               <option value="software-engineer">Software Engineer</option>
               <option value="fullstack-engineer">FullStack Engineer</option>
             </select>
+
+            
           </div>
 
-          <select data-office
-            class="py-4 px-9 sm:pr-20 sm:bg-[80%_center] sm:py-[26px] rounded sm:pl-[56px] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
-            <option value="*">All Office</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="hungary">Hungary</option>
-            <option value="brazil">Brazil</option>
-            <option value="italy">Italy</option>
-          </select>
+          <div>
+            <select data-office
+              class="py-4 px-9 sm:pr-20 sm:bg-[75%_center] sm:py-[26px] rounded sm:pl-[3.6rem] text-lg border-none lg:text-xl shadow focus:border-none focus:ring-0">
+              <option value="*">All Office</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="hungary">Hungary</option>
+              <option value="brazil">Brazil</option>
+              <option value="italy">Italy</option>
+            </select></div>
+
         </div>
       </div>
     </div>

@@ -264,6 +264,7 @@
     });
   };
 
+  //
   const priceTags = document.querySelectorAll("[data-package]");
   priceTags?.forEach((priceTag) => {
     priceTag.addEventListener("click", function () {
@@ -281,4 +282,37 @@
       });
     });
   });
+
+  //  counter;
+  let observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.8
+  });
+
+  const counters = document.querySelectorAll("[data-counter]");
+  counters?.forEach((counter) => observer.observe(counter));
+
+  function startCounter(counter){
+    const speed = parseInt(counter.getAttribute("data-speed"));;
+    const target = parseInt(counter.getAttribute("data-target"));
+    const count = parseInt(counter.innerText);
+    const increment = Math.trunc(target / speed);
+    if (count < target) {
+      counter.innerHTML = (count + increment);
+      setTimeout(() => startCounter(counter), 80);
+    } else {
+      counter.innerText = target;
+    }
+  }
+
+  function handleIntersection(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.intersectionRatio > 0) {
+        startCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
 })();
