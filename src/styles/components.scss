@@ -209,7 +209,7 @@
   }
 
   .list-item {
-    @apply relative pl-6 text-lg before:absolute before:left-0 before:top-1/2 before:h-2 before:w-2 before:-translate-y-1/2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-secondary;
+    @apply relative pl-6 text-lg before:absolute before:left-0 before:top-[10px] before:h-2 before:w-2 before:rounded-full before:bg-gradient-to-r before:from-primary before:to-secondary;
   }
 }
 
@@ -219,11 +219,16 @@
 }
 
 // pricing
-
 .popular {
   @apply relative overflow-hidden border-primary bg-white p-10 shadow after:absolute after:-right-[63px] after:top-[5%] after:block after:w-[250px] after:rotate-45 after:bg-primary after:p-2 after:text-center after:font-semibold after:text-white after:content-['_Most_Popular'] lg:-mt-[9%] xl:scale-[1.05];
 }
 
 .has-shape {
   @apply relative before:absolute before:left-0 before:top-[1.1em] before:h-4 before:w-[160px] before:bg-[url('/images/shape.svg')] before:bg-no-repeat;
+}
+
+// author-list
+
+.author-lists {
+  @apply [&>*:nth-child(2n)]:relative [&>*:nth-child(2n)]:before:absolute [&>*:nth-child(2n)]:before:left-0 [&>*:nth-child(2n)]:before:top-1/2 [&>*:nth-child(2n)]:before:h-[60%] [&>*:nth-child(2n)]:before:w-1 [&>*:nth-child(2n)]:before:-translate-y-1/2 [&>*:nth-child(2n)]:before:rounded [&>*:nth-child(2n)]:before:bg-gradient-to-b [&>*:nth-child(2n)]:before:from-primary [&>*:nth-child(2n)]:before:to-secondary [&>*:nth-child(4n+1)]:xl:before:hidden [&>*:nth-child(n+1)]:before:top-1/2  [&>*:nth-child(n+1)]:before:h-[60%] [&>*:nth-child(n+1)]:before:w-1 [&>*:nth-child(n+1)]:before:-translate-y-1/2 [&>*:nth-child(n+1)]:before:rounded [&>*:nth-child(n+1)]:before:bg-gradient-to-b [&>*:nth-child(n+1)]:before:from-primary [&>*:nth-child(n+1)]:before:to-secondary [&>*:nth-child(n+2)]:before:left-0 [&>*:nth-child(n+2)]:xl:relative [&>*:nth-child(n+2)]:xl:before:absolute;
 }
