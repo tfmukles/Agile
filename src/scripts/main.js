@@ -315,11 +315,10 @@
     });
   }
 
-  const Shuffle = window.Shuffle; // Assumes you're using the UMD version of Shuffle (for example, from unpkg.com).
-  const element = document.getElementById("photo-gallery");
-  const sizer = element.querySelector(".js-shuffle-sizer");
+  //shuffle gallery
+  const gallery = document.getElementById("photo-gallery");
 
-  const shuffleInstance = new Shuffle(element, {
+  const shuffleInstance = new Shuffle(gallery, {
     itemSelector: ".picture-item",
   });
 })();
