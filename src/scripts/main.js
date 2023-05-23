@@ -240,16 +240,6 @@
   let selectedDepartment = "*";
   let selectedLocation = "*";
 
-  departmentSelect?.addEventListener("change", (e) => {
-    selectedDepartment = e.target.value;
-    filtrCardList(selectedDepartment);
-  });
-
-  locationSelect?.addEventListener("change", (e) => {
-    selectedLocation = e.target.value;
-    filtrCardList(selectedLocation);
-  });
-
   const filtrCardList = (filter) => {
     cardList.forEach((card) => {
       const attr = card.dataset.filter;
@@ -263,6 +253,16 @@
       }
     });
   };
+
+  departmentSelect?.addEventListener("change", (e) => {
+    selectedDepartment = e.target.value;
+    filtrCardList(selectedDepartment);
+  });
+
+  locationSelect?.addEventListener("change", (e) => {
+    selectedLocation = e.target.value;
+    filtrCardList(selectedLocation);
+  });
 
   //pricing
   const priceTags = document.querySelectorAll("[data-package]");
@@ -282,16 +282,6 @@
       });
     });
   });
-
-  //  counter;
-  let observer = new IntersectionObserver(handleIntersection, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.8,
-  });
-
-  const counters = document.querySelectorAll("[data-counter]");
-  counters?.forEach((counter) => observer.observe(counter));
 
   function startCounter(counter) {
     const speed = parseInt(counter.getAttribute("data-speed"));
@@ -315,11 +305,21 @@
     });
   }
 
+  //  counter;
+  let observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.8,
+  });
+
+  const counters = document.querySelectorAll("[data-counter]");
+  counters?.forEach((counter) => observer.observe(counter));
+
   //shuffle gallery
   const gallery = document.getElementById("photo-gallery");
 
   if (gallery) {
-    const shuffleInstance = new Shuffle(gallery, {
+    new Shuffle(gallery, {
       itemSelector: ".picture-item",
     });
   }
