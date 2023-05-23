@@ -318,7 +318,9 @@
   //shuffle gallery
   const gallery = document.getElementById("photo-gallery");
 
-  const shuffleInstance = new Shuffle(gallery, {
-    itemSelector: ".picture-item",
-  });
+  if (gallery) {
+    const shuffleInstance = new Shuffle(gallery, {
+      itemSelector: ".picture-item",
+    });
+  }
 })();

@@ -12,7 +12,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply pt-7 pb-8 bg-body;
+  @apply bg-body pb-8 pt-7 max-lg:max-h-screen max-lg:overflow-y-auto;
 }
 
 // navbar items
@@ -36,7 +36,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply block p-3 text-lg leading-[28px] capitalize font-normal transition hover:text-primary lg:px-2 lg:py-3;
+  @apply block p-3 text-lg font-normal capitalize leading-[28px] transition hover:text-primary lg:px-2 lg:py-3;
 }
 
 .nav-dropdown {
