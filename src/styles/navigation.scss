@@ -41,10 +41,14 @@ input#nav-toggle:checked ~ #nav-menu {
 
 .nav-dropdown {
   @apply mr-0;
+
+  &.active .nav-dropdown-list {
+    @apply max-lg:visible max-lg:block max-lg:opacity-100;
+  }
 }
 
 .nav-dropdown-list {
-  @apply z-10 min-w-[180px] rounded bg-body p-4 shadow;
+  @apply z-10 mx-auto min-w-[180px] max-w-[350px] rounded bg-body p-4 shadow;
 }
 
 .nav-dropdown-item {

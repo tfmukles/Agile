@@ -1,9 +1,18 @@
+// container
+.container {
+  @apply mx-auto max-w-[1320px] px-4;
+}
+
+.has-bg {
+  @apply mx-auto max-w-[1560px] bg-theme-light py-7 lg:py-[81px];
+}
+
 .bg-gradient {
   @apply bg-gradient-to-r from-primary to-secondary;
 }
 
 .text-linear {
-  @apply  bg-gradient-to-r from-primary to-secondary  bg-clip-text;
+  @apply bg-gradient-to-r from-primary to-secondary  bg-clip-text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -24,33 +33,31 @@
   @apply rounded-[24px];
 }
 
-.shadow{
+.shadow {
   @apply shadow-[0_4px_18px] shadow-primary/20;
 }
 
 //video button
-.video-button{
-  @apply absolute text-5xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white w-20 h-20 bg-primary flex items-center justify-center z-10 rounded-full;
+.video-button {
+  @apply absolute left-1/2 top-1/2 z-10 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-5xl text-white;
 
-  span{
-    @apply absolute scale-0 top-0 -z-10 left-0 w-full h-full rounded-full bg-inherit  opacity-80;
+  span {
+    @apply absolute left-0 top-0 -z-10 h-full w-full scale-0 rounded-full bg-inherit  opacity-80;
     animation: pulse 4s ease-in-out infinite;
 
-    &:nth-child(2){
+    &:nth-child(2) {
       animation-delay: 1s;
     }
-    
-    &:nth-child(3){
+
+    &:nth-child(3) {
       animation-delay: 2s;
     }
 
-    &:nth-child(3){
+    &:nth-child(3) {
       animation-delay: 3s;
     }
   }
 }
-
-
 
 @keyframes pulse {
   to {

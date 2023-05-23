@@ -1,35 +1,11 @@
 (function () {
   "use strict";
 
-  // ########################## Preloader ##############################
-  // window.addEventListener("load", (e) => {
-  //   document.querySelector(".preloader").style.display = "none";
-  // });
-
-  // ########################## Theme switcher ##########################
-  var darkMode = false;
-  var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    darkMode = true;
-  }
-  if (localStorage.getItem("theme") === "dark") {
-    darkMode = true;
-  } else if (localStorage.getItem("theme") === "light") {
-    darkMode = false;
-  }
-  if (darkMode) {
-    document.documentElement.classList.toggle("dark");
-  }
-  document.addEventListener("DOMContentLoaded", () => {
-    [].forEach.call(themeSwitch, function (ts) {
-      ts.checked = darkMode ? true : false;
-      ts.addEventListener("click", () => {
-        document.documentElement.classList.toggle("dark");
-        localStorage.setItem(
-          "theme",
-          document.documentElement.classList.contains("dark") ? "dark" : "light"
-        );
-      });
+  // ####################### Dropdown #########################
+  const dropDownLists = document.querySelectorAll(".nav-dropdown>span");
+  dropDownLists.forEach((dropDown) => {
+    dropDown.addEventListener("click", function () {
+      this.parentElement.classList.toggle("active");
     });
   });
 
@@ -74,30 +50,31 @@
 
   // ########################## Logo Animation ##############################
   new Swiper(".logo-animation", {
-    slidesPerView: 10,
-    spaceBetween: 10,
+    spaceBetween: 56,
     allowTouchMove: false,
-    loop: true,
     speed: 4000,
+    loop: true,
     autoplay: {
       delay: 1,
       disableOnInteraction: false,
     },
     breakpoints: {
-      1350: { slidesPerView: 10 },
-      1260: { slidesPerView: 8.5 },
+      1650: { slidesPerView: 11  },
+      1480: { slidesPerView: 10 },
+      1480: { slidesPerView: 10 },
+      1350: { slidesPerView: 9 },
       1180: { slidesPerView: 8 },
-      1024: { slidesPerView: 7 },
+      1000: { slidesPerView: 7 },
       790: { slidesPerView: 6 },
-      400: { slidesPerView: 3 },
-      520: { slidesPerView: 4 },
       680: { slidesPerView: 5 },
+      520: { slidesPerView: 4 },
+      400: { slidesPerView: 3 },
       0: { slidesPerView: 2.4 },
     },
   });
 
   new Swiper(".logo-animation-rtl", {
-    slidesPerView: 10,
+    spaceBetween: 56,
     direction: "horizontal",
     spaceBetween: 10,
     allowTouchMove: false,
@@ -109,14 +86,16 @@
       disableOnInteraction: false,
     },
     breakpoints: {
-      1350: { slidesPerView: 10 },
-      1260: { slidesPerView: 8.5 },
+      1650: { slidesPerView: 11  },
+      1480: { slidesPerView: 10 },
+      1480: { slidesPerView: 10 },
+      1350: { slidesPerView: 9 },
       1180: { slidesPerView: 8 },
-      1024: { slidesPerView: 7 },
+      1000: { slidesPerView: 7 },
       790: { slidesPerView: 6 },
-      400: { slidesPerView: 3 },
-      520: { slidesPerView: 4 },
       680: { slidesPerView: 5 },
+      520: { slidesPerView: 4 },
+      400: { slidesPerView: 3 },
       0: { slidesPerView: 2.4 },
     },
   });
