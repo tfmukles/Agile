@@ -56,9 +56,10 @@
     loop: true,
     autoplay: {
       delay: 1,
+      disableOnInteraction: false,
     },
     breakpoints: {
-      1650: { slidesPerView: 11  },
+      1650: { slidesPerView: 11 },
       1480: { slidesPerView: 10 },
       1480: { slidesPerView: 10 },
       1350: { slidesPerView: 9 },
@@ -79,10 +80,11 @@
     speed: 4000,
     autoplay: {
       delay: 1,
+      disableOnInteraction: false,
       reverseDirection: true,
     },
     breakpoints: {
-      1650: { slidesPerView: 11  },
+      1650: { slidesPerView: 11 },
       1480: { slidesPerView: 10 },
       1480: { slidesPerView: 10 },
       1350: { slidesPerView: 9 },

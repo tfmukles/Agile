@@ -8,12 +8,7 @@
 }
 
 .text-linear {
-  @apply bg-gradient-to-r from-primary to-secondary  bg-clip-text;
-  -webkit-text-fill-color: transparent;
-}
-
-.has-linear-text:hover .text-linear{
-  -webkit-text-fill-color: #fff;
+  @apply bg-gradient-to-r from-primary to-secondary  bg-clip-text text-transparent;
 }
 
 .rounded-sm {
@@ -36,6 +31,10 @@
   @apply shadow-[0_4px_18px] shadow-primary/20;
 }
 
+.shadow-lg {
+  @apply shadow-[0_8px_22px] shadow-primary/30;
+}
+
 //video button
 .video-button {
   @apply absolute left-1/2 top-1/2 z-10 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-5xl text-white;
@@ -52,7 +51,7 @@
       animation-delay: 2s;
     }
 
-    &:nth-child(3) {
+    &:nth-child(4) {
       animation-delay: 3s;
     }
   }

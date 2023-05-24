@@ -2,7 +2,7 @@
 .section {
   @apply pb-14 lg:pb-[7.5rem];
   &-sm {
-    @apply pb-10 pb-[5.67rem];
+    @apply pb-10 lg:pb-[5.67rem];
   }
 }
 
@@ -175,7 +175,7 @@
   @apply prose-img:my-3 prose-img:max-w-full prose-img:rounded;
   @apply prose-hr:border-border;
   @apply prose-p:my-3 prose-p:text-lg prose-p:text-light;
-  @apply prose-blockquote:relative prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark;
+  @apply prose-blockquote:relative prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:font-semibold prose-blockquote:not-italic prose-blockquote:text-dark;
   @apply prose-pre:rounded-lg prose-pre:bg-white;
   @apply prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-dark;
@@ -186,6 +186,10 @@
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark;
   @apply prose-tr:border-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
+
+  li::marker {
+    @apply text-xl text-primary;
+  }
 }
 
 //list style
