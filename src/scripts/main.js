@@ -27,7 +27,7 @@
 
     breakpoints: {
       0: {
-        slidesPerView: 1.3,
+        slidesPerView: 2,
       },
       450: {
         slidesPerView: 2.5,
@@ -56,7 +56,6 @@
     loop: true,
     autoplay: {
       delay: 1,
-      disableOnInteraction: false,
     },
     breakpoints: {
       1650: { slidesPerView: 11  },
@@ -75,15 +74,12 @@
 
   new Swiper(".logo-animation-rtl", {
     spaceBetween: 56,
-    direction: "horizontal",
-    spaceBetween: 10,
     allowTouchMove: false,
     loop: true,
     speed: 4000,
     autoplay: {
       delay: 1,
       reverseDirection: true,
-      disableOnInteraction: false,
     },
     breakpoints: {
       1650: { slidesPerView: 11  },

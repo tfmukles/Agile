@@ -1,14 +1,18 @@
 // section style
 .section {
-  @apply py-8 lg:py-[58px];
+  @apply pb-14 lg:pb-[7.5rem];
   &-sm {
-    @apply py-4 lg:py-6;
+    @apply pb-10 pb-[5.67rem];
   }
+}
+
+.has-bg {
+  @apply mx-auto max-w-[1560px] bg-theme-light py-16 lg:py-[81px];
 }
 
 .section-title {
   @apply mx-auto mb-5 text-center lg:mb-14;
-  .main-tilte {
+  .main-title {
     @apply mb-2 inline-block rounded bg-primary px-5 py-2 text-sm font-semibold capitalize text-white;
   }
 }

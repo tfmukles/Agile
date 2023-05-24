@@ -3,10 +3,6 @@
   @apply mx-auto max-w-[1320px] px-4;
 }
 
-.has-bg {
-  @apply mx-auto max-w-[1560px] bg-theme-light py-7 lg:py-[81px];
-}
-
 .bg-gradient {
   @apply bg-gradient-to-r from-primary to-secondary;
 }
@@ -16,10 +12,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.has-linear-text:hover .text-linear{
+  -webkit-text-fill-color: #fff;
+}
+
 .rounded-sm {
   @apply rounded-[6px];
 }
-
 .rounded {
   @apply rounded-[8px];
 }
