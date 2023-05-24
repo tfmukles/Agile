@@ -175,12 +175,12 @@
   @apply prose-img:my-3 prose-img:max-w-full prose-img:rounded;
   @apply prose-hr:border-border;
   @apply prose-p:my-3 prose-p:text-lg prose-p:text-light;
-  @apply prose-blockquote:relative prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:font-semibold prose-blockquote:not-italic prose-blockquote:text-dark;
+  @apply prose-blockquote:relative prose-blockquote:rounded-lg prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white prose-blockquote:px-12 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:font-semibold prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:shadow;
   @apply prose-pre:rounded-lg prose-pre:bg-white;
   @apply prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-dark;
   @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary;
-  @apply prose-li:text-text;
+  @apply prose-li:mb-5 prose-li:text-lg prose-li:text-dark;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""];
   @apply prose-thead:border-border prose-thead:bg-white;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark;

@@ -67,9 +67,8 @@
       1000: { slidesPerView: 7 },
       790: { slidesPerView: 6 },
       680: { slidesPerView: 5 },
-      520: { slidesPerView: 4 },
-      400: { slidesPerView: 3 },
-      0: { slidesPerView: 2.4 },
+      480: { slidesPerView: 4 },
+      0: { slidesPerView: 3 },
     },
   });
 
@@ -92,9 +91,8 @@
       1000: { slidesPerView: 7 },
       790: { slidesPerView: 6 },
       680: { slidesPerView: 5 },
-      520: { slidesPerView: 4 },
-      400: { slidesPerView: 3 },
-      0: { slidesPerView: 2.4 },
+      480: { slidesPerView: 4 },
+      0: { slidesPerView: 3 },
     },
   });
 
