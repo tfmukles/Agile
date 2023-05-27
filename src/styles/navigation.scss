@@ -20,6 +20,10 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply relative flex flex-wrap items-center justify-between;
 }
 
+.nav-active {
+  @apply text-primary #{!important};
+}
+
 .navbar-brand {
   @apply text-xl font-semibold text-dark;
   image {
@@ -42,7 +46,7 @@ input#nav-toggle:checked ~ #nav-menu {
 .nav-dropdown {
   @apply mr-0;
 
-  &.active .nav-dropdown-list {
+  &.collapsed .nav-dropdown-list {
     @apply max-lg:visible max-lg:block max-lg:opacity-100;
   }
 }
