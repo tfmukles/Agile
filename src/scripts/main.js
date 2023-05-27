@@ -1,11 +1,22 @@
 (function () {
   "use strict";
 
+  // ####################### Page Active #########################
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentUrl = window.location.pathname;
+    let activeLink = document.querySelector("a[href='" + currentUrl + "']");
+    activeLink.classList.add("nav-active");
+    let dropdownParent = activeLink.closest(".nav-dropdown");
+    if (!dropdownParent) return;
+    const dropdownLink = dropdownParent.querySelector(".nav-link");
+    dropdownLink.classList.add("nav-active");
+  });
+
   // ####################### Dropdown #########################
   const dropDownLists = document.querySelectorAll(".nav-dropdown>span");
   dropDownLists.forEach((dropDown) => {
     dropDown.addEventListener("click", function () {
-      this.parentElement.classList.toggle("active");
+      this.parentElement.classList.toggle("collapsed");
     });
   });
 
