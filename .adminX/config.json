@@ -1,14 +1,11 @@
 {
   "media": {
-    "root": "src/pages",
+    "root": "src",
     "public": "src"
   },
   "content": {
-    "root": "src/pages"
+    "root": "src/partials/components"
   },
-  "themeConfig": [
-    ".gitignore",
-    "src/pages/contact.html"
-  ],
+  "themeConfig": [],
   "arrangement": {}
 }
